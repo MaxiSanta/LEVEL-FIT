@@ -1,0 +1,31 @@
+<resources>
+    //Login
+    <string name="app_name">LEVEL FIT</string>
+    <string name="lf_logo">LF · LEVEL FIT</string>
+    <string name="lf_lema">ENTRENA. REGISTRA. SUPERA.</string>
+    <string name="lf_titulo">TU MEJOR\nVERSIÓN.</string>
+    <string name="lf_acceso">Iniciar sesión</string>
+    <string name="lf_correo">Correo electrónico</string>
+    <string name="lf_clave">Contraseña</string>
+    <string name="lf_entrar">ENTRAR A LEVEL FIT</string>
+    <string name="lf_crear_cuenta">¿No tienes cuenta? Crear cuenta</string>
+    //singup
+    <string name="lf_nombre">Nombre</string>
+    <string name="lf_confirmar_clave">Confirmar contraseña</string>
+    <string name="lf_registro">Crear cuenta</string>
+    <string name="lf_registrar">CREAR MI CUENTA</string>
+    <string name="lf_volver_acceso">Ya tengo cuenta. Iniciar sesión</string>
+    //menuprinci
+    <string name="lf_saludo">¡Hola! Vamos a entrenar.</string>
+    <string name="lf_menu_subtitulo">Tu siguiente paso comienza hoy.</string>
+    <string name="lf_entrenamiento">ENTRENAMIENTO</string>
+    <string name="lf_motivacion">EMPUJA TUS\nLÍMITES.</string>
+    <string name="lf_rutinas_descripcion">Elige una rutina y registra tu entrenamiento.</string>
+    <string name="lf_ver_rutinas">VER RUTINAS</string>
+    <string name="lf_mis_rutinas">MIS RUTINAS</string>
+    <string name="lf_mis_rutinas_descripcion">Crea y organiza tus propios entrenamientos.</string>
+    <string name="lf_progreso">MI PROGRESO</string>
+    <string name="lf_progreso_descripcion">Consulta los resultados de tus sesiones guardadas.</string>
+    <string name="lf_ver_historial">VER HISTORIAL</string>
+    <string name="lf_cerrar_sesion">Cerrar sesión</string>
+</resources>

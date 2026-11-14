@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0E0B"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/lf_logo"
+            android:textColor="#C4FF19"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:letterSpacing="0.12"
+            android:text="@string/lf_lema"
+            android:textColor="#C4FF19"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/lf_titulo"
+            android:textColor="#F5F5F0"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/lf_acceso"
+            android:textColor="#F5F5F0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:id="@+id/tvTituloFormulario"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contenedorNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/lf_nombre"
+            android:textColorHint="#B8BDB2"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColor="#F5F5F0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/lf_correo"
+            android:textColorHint="#B8BDB2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="emailAddress"
+                android:backgroundTint="#B8BDB2"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#F5F5F0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/lf_clave"
+            android:textColorHint="#B8BDB2"
+            app:endIconMode="password_toggle"
+            app:endIconTint="#B8BDB2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:backgroundTint="#B8BDB2"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#F5F5F0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/contenedorConfirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/lf_confirmar_clave"
+            android:textColorHint="#B8BDB2"
+            android:visibility="gone"
+            app:endIconMode="password_toggle"
+            app:endIconTint="#B8BDB2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etConfirmarClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="newPassword"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#F5F5F0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/lf_entrar"
+            android:textColor="#0B0E0B"
+            android:textStyle="bold"
+            app:backgroundTint="#C4FF19"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btnMostrarRegistro"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/lf_crear_cuenta"
+            android:textAllCaps="false"
+            android:textColor="#C4FF19"
+            app:backgroundTint="@android:color/transparent" />
+
+    </LinearLayout>
+
+</ScrollView>
