@@ -21,15 +21,18 @@ class MenuPrincipalActivity : AppCompatActivity() {
         val btnVerHistorial = findViewById<MaterialButton>(R.id.btnVerHistorial)
         val btnCerrarSesion = findViewById<MaterialButton>(R.id.btnCerrarSesion)
 
-        // 2. Abrir rutinas predeterminadas
+
+        // Abrir rutinas predeterminadas
         btnVerRutinas.setOnClickListener {
             val intent = Intent(this, RutinasActivity::class.java)
+            intent.putExtra("tipoRutina", "predeterminadas")
             startActivity(intent)
         }
 
-        // 3. Abrir rutinas personalizadas
+        // Abrir rutinas personalizadas
         btnMisRutinas.setOnClickListener {
             val intent = Intent(this, RutinasActivity::class.java)
+            intent.putExtra("tipoRutina", "personalizadas")
             startActivity(intent)
         }
 

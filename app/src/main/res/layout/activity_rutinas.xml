@@ -1,36 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#0B0E0B"
-    android:padding="24dp">
+    android:fillViewport="true">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LEVEL FIT"
-        android:textColor="#C4FF19"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Mis rutinas"
-        android:textColor="#F5F5F0"
-        android:textSize="28sp"
-        android:textStyle="bold" />
+        <!-- Logo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LEVEL FIT"
+            android:textColor="#C4FF19"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnVolverMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Volver al menú principal"
-        android:textColor="#0B0E0B"
-        android:backgroundTint="#C4FF19" />
+        <!-- Título dinámico -->
+        <TextView
+            android:id="@+id/tvTituloRutinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Rutinas"
+            android:textColor="#F5F5F0"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <!-- Descripción dinámica -->
+        <TextView
+            android:id="@+id/tvDescripcionRutinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Organiza tu entrenamiento"
+            android:textColor="#B8BDB2"
+            android:textSize="15sp" />
+
+        <!-- RUTINAS PREDETERMINADAS -->
+        <LinearLayout
+            android:id="@+id/seccionPredeterminadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUERPO COMPLETO"
+                android:textColor="#C4FF19"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="#191D17"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="TREN SUPERIOR"
+                android:textColor="#C4FF19"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="#191D17"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="TREN INFERIOR"
+                android:textColor="#C4FF19"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="#191D17"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="CORE Y ABDOMINALES"
+                android:textColor="#C4FF19"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="#191D17"
+                android:padding="20dp" />
+
+        </LinearLayout>
+
+        <!-- RUTINAS PERSONALIZADAS -->
+        <LinearLayout
+            android:id="@+id/seccionPersonalizadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#191D17"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mis entrenamientos"
+                android:textColor="#C4FF19"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Todavía no has creado ninguna rutina personalizada."
+                android:textColor="#B8BDB2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Próximamente podrás crear tus propios entrenamientos."
+                android:textColor="#F5F5F0"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Volver al menú -->
+        <Button
+            android:id="@+id/btnVolverMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:minHeight="56dp"
+            android:text="Volver al menú principal"
+            android:textColor="#0B0E0B"
+            android:backgroundTint="#C4FF19" />
+
+    </LinearLayout>
+
+</ScrollView>
