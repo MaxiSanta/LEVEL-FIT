@@ -1,36 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#0B0E0B"
-    android:padding="24dp">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LEVEL FIT"
-        android:textColor="#C4FF19"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Historial de entrenamientos"
-        android:textColor="#F5F5F0"
-        android:textSize="28sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnVolverMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Volver al menú principal"
-        android:textColor="#0B0E0B"
-        android:backgroundTint="#C4FF19" />
-
-</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:fitsSystemWindows="true" android:background="#0B0E0B">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ent_historial" android:textColor="#F5F5F0" android:textSize="26sp" android:textStyle="bold" android:layout_marginTop="12dp" />
+        <TextView android:id="@+id/tvHistorial" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ent_cargando" android:textColor="#F5F5F0" android:textSize="16sp" android:layout_marginTop="16dp" />
+        <Button android:id="@+id/btnRecargar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ent_reintentar" android:minHeight="48dp" android:layout_marginTop="8dp" android:textAllCaps="false" android:textColor="#C4FF19" android:backgroundTint="#252D1C" android:visibility="gone" />
+        <Button android:id="@+id/btnVolverMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ent_volver" android:minHeight="48dp" android:layout_marginTop="8dp" android:textAllCaps="false" android:textColor="#C4FF19" android:backgroundTint="#252D1C" />
+    </LinearLayout>
+</ScrollView>

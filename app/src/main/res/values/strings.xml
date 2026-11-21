@@ -28,4 +28,90 @@
     <string name="lf_progreso_descripcion">Consulta los resultados de tus sesiones guardadas.</string>
     <string name="lf_ver_historial">VER HISTORIAL</string>
     <string name="lf_cerrar_sesion">Cerrar sesión</string>
+    <string name="lf_cuerpo_completo">Cuerpo completo</string>
+    <string name="lf_detalle_cuerpo_completo">• Sentadilla con barra\n• Press de banca\n• Remo en polea</string>
+    <string name="lf_volver_menu">Volver al menú principal</string>
+    <string name="lf_tren_superior">Tren superior</string>
+    <string name="lf_detalle_superior">• Press de banca\n• Jalón al pecho\n• Press militar</string>
+    <string name="lf_tren_inferior">Tren inferior</string>
+    <string name="lf_detalle_inferior">• Prensa de piernas\n• Curl femoral\n• Elevación de talones</string>
+    <string name="lf_core">Core y abdominales</string>
+    <string name="lf_detalle_core">• Crunch en polea\n• Abdominal en máquina\n• Rotación de tronco en polea</string>
+    <string name="ent_pred">Rutinas predeterminadas</string>
+    <string name="ent_propias">Mis rutinas</string>
+    <string name="ent_tit_cuerpo">Cuerpo completo</string>
+    <string name="ent_tit_superior">Tren superior</string>
+    <string name="ent_tit_inferior">Tren inferior</string>
+    <string name="ent_tit_core">Core y abdominales</string>
+    <string name="ent_comenzar">Comenzar entrenamiento</string>
+    <string name="ent_libre">Entrenamiento libre</string>
+    <string name="ent_abrir_libre">Registrar entrenamiento libre</string>
+    <string name="ent_volver">Volver</string>
+    <string name="ent_ejercicio">Nombre del ejercicio</string>
+    <string name="ent_elegir">Elegir un ejercicio</string>
+    <string name="ent_guardar_nombre">Guardar como ejercicio propio</string>
+    <string name="ent_peso">Peso (kg)</string>
+    <string name="ent_series">Series realizadas</string>
+    <string name="ent_reps">Repeticiones por serie</string>
+    <string name="ent_agregar">Añadir a la sesión</string>
+    <string name="ent_quitar">Quitar último registro</string>
+    <string name="ent_guardar_sesion">Guardar entrenamiento</string>
+    <string name="ent_resumen">Ejercicios registrados</string>
+    <string name="ent_sin_filas">Aún no has añadido ejercicios.</string>
+    <string name="ent_total">Volumen total: %1$.2f kg</string>
+    <string name="ent_fila">%1$s · %2$.2f kg · %3$d series × %4$d rep. · Volumen: %5$.2f kg</string>
+    <string name="ent_err_nombre">Escribe el nombre del ejercicio.</string>
+    <string name="ent_err_peso">Ingresa los kilos. Usa 0 para peso corporal.</string>
+    <string name="ent_err_entero">Ingresa un número entero mayor que cero.</string>
+    <string name="ent_err_lectura">No se pudieron cargar los datos. Revisa tu conexión y reintenta.</string>
+    <string name="ent_err_guardar">No se pudo guardar. Revisa tu conexión y vuelve a intentarlo.</string>
+    <string name="ent_guardado_nombre">Ejercicio disponible en tu lista.</string>
+    <string name="ent_ya_base">Este ejercicio ya figura en el catálogo.</string>
+    <string name="ent_guardado_sesion">Entrenamiento guardado.</string>
+    <string name="ent_estado_guardando">Guardando…</string>
+    <string name="ent_sug_vacias">Escribe el nombre de tu primer ejercicio.</string>
+    <string name="ent_fecha_fila">%1$s · %2$s</string>
+    <string name="ent_historial">Mi historial</string>
+    <string name="ent_historial_vacio">Todavía no has guardado entrenamientos.</string>
+    <string name="ent_reintentar">Reintentar</string>
+    <string name="ent_cargando">Cargando…</string>
+    <string name="ent_saludo">¡Hola, %1$s!</string>
+    <string name="ent_err_correo">Escribe un correo válido.</string>
+    <string name="ent_err_clave">Escribe tu contraseña.</string>
+    <string name="ent_err_seis">Usa al menos 6 caracteres.</string>
+    <string name="ent_err_confirmacion">Las dos contraseñas deben coincidir.</string>
+    <string name="ent_err_acceso">No pudimos iniciar sesión. Revisa el correo, la contraseña y la conexión.</string>
+    <string name="ent_err_registro">No pudimos crear la cuenta. Revisa el correo, la contraseña y la conexión.</string>
+    <string name="ent_descartar">¿Salir de esta sesión sin guardar los ejercicios?</string>
+    <string name="ent_salir">Salir sin guardar</string>
+    <string name="ent_seguir">Seguir entrenando</string>
+    <string name="ent_err_perfil">No se pudo guardar tu nombre. Puedes reintentar con tu misma cuenta.</string>
+    <string name="ent_err_nombre_persona">Ingresa tu nombre.</string>
+    <string name="ent_confirmar">Guardar nombre</string>
+    <string name="ent_nombre_perfil">¿Cómo quieres que te llame LEVEL FIT?</string>
+    <string name="ent_ej_personales">Tus ejercicios propios</string>
+    <string name="ent_personales_vacio">Aún no tienes ejercicios propios. Puedes añadir uno desde Entrenamiento libre.</string>
+    <string-array name="ent_lista_cuerpo">
+        <item>Sentadilla con barra</item>
+        <item>Press de banca</item>
+        <item>Remo en polea</item>
+    </string-array>
+    <string-array name="ent_lista_superior">
+        <item>Press de banca</item>
+        <item>Jalón al pecho</item>
+        <item>Press militar</item>
+    </string-array>
+    <string-array name="ent_lista_inferior">
+        <item>Prensa de piernas</item>
+        <item>Curl femoral</item>
+        <item>Elevación de talones</item>
+    </string-array>
+    <string-array name="ent_lista_core">
+        <item>Crunch en polea</item>
+        <item>Abdominal en máquina</item>
+        <item>Rotación de tronco en polea</item>
+    </string-array>
+    <string name="ent_pendiente">Añade el ejercicio que estás escribiendo a la sesión o limpia los campos antes de guardar.</string>
+    <string name="ent_url_base" translatable="false">
+https://level-fit-c1868-default-rtdb.firebaseio.com</string>
 </resources>

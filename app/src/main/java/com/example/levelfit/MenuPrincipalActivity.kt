@@ -2,6 +2,8 @@ package com.example.levelfit
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,11 @@ class MenuPrincipalActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu_principal)
 
+        val nombre = intent.getStringExtra("nombre")
+        if (!nombre.isNullOrBlank()) {
+            findViewById<TextView>(R.id.tvSaludo).text = getString(R.string.ent_saludo, nombre)
+        }
+
         // 1. Identificar los botones del menú
         val btnVerRutinas = findViewById<MaterialButton>(R.id.btnVerRutinas)
         val btnMisRutinas = findViewById<MaterialButton>(R.id.btnMisRutinas)
@@ -24,12 +31,14 @@ class MenuPrincipalActivity : AppCompatActivity() {
         // 2. Abrir rutinas predeterminadas
         btnVerRutinas.setOnClickListener {
             val intent = Intent(this, RutinasActivity::class.java)
+            intent.putExtra("tipoRutina", "predeterminadas")
             startActivity(intent)
         }
 
         // 3. Abrir rutinas personalizadas
         btnMisRutinas.setOnClickListener {
             val intent = Intent(this, RutinasActivity::class.java)
+            intent.putExtra("tipoRutina", "personalizadas")
             startActivity(intent)
         }
 
@@ -39,9 +48,12 @@ class MenuPrincipalActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // 5. Cerrar sesión de forma provisional
+        // 5. Terminar la sesión de Firebase y volver al acceso.
         btnCerrarSesion.setOnClickListener {
-            finish()
+            FirebaseAuth.getInstance().signOut()
+            val acceso = Intent(this, MainActivity::class.java)
+            acceso.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(acceso)
         }
 
         // 6. Adaptar la pantalla a las barras del sistema
