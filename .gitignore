@@ -16,3 +16,7 @@ local.properties
 
 # Configuración local de Android Studio
 .idea/
+
+.kotlin/
+hs_err_pid*.log
+replay_pid*.log
